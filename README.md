@@ -18,21 +18,14 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Specifications
 
-* *he program should return when a year is not a leap year.
-Input Example: 1993
-Output Example: false
-
-* The program should return 'true' for years divisible by 4, since those are leap years.
-Input Example: 2004
-Output Example: true
-
-* The program should return 'false' for years divisible by 100, since those are not leap years.
-Input Example: 1900
-Output Example: false
-
-* The program should return 'true' for years divisible by 400, since those are leap years.
-Input Example: 2000
-Output Example: true
+|   Behavior    |   Input   |   Output    |
+|:--------------|:---------:|------------:|
+|The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels. |  3 |  3 |
+|The program adds "ay" to single-letter words beginning with a vowel.|  i |  iay |
+|For words beginning with a vowel, add "way" to the end. | anchor | anchorway |
+|For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay". | crust | ustcray |
+|If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first! | squeal | ealsquay |
+|For words beginning with "y", treat "y" as a consonant. | yard |  ardyay |
 
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
